@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: cursive;
+    background-color: rgb(243, 219, 219);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1400px;
+  }
+  
+  .header {
+      display: flex;
+      justify-content: space-evenly;
+      
+  }
+  .header h1 {
+      padding-right: 50px;
+      color: black;
+  }
+  .mySidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    padding-top: 80px;
+    background-image: url(../img/la-pajara-azul-WpgYhSBaJ00-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 550px;
+  }
+  
+  .mySidenav a {
+    padding: 15px ;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .mySidenav a:hover {
+    color: whitesmoke;
+  }
+  
+  .mySidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  .reHome {
+      width: 170px;
+      padding: 20px;
+      height: 50px;
+      background-color: rgb(208, 211, 181);
+      border: 1px solid red;
+      border-radius: 20px;
+      position: relative;
+      left: 620px;
+  }
+
+
+  .myDash {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 10px;
+      margin: 20px;
+      width: 100%;
+  }
+
+  .myDash .col{
+      width: 25%;
+      margin: auto;
+      height: 80px;
+      padding: 100px;
+      border: 1px solid gray;
+      border-radius: 20px;
+      background-position: center;
+      background-size: 450px;
+      background-repeat: no-repeat;
+      font-size: 15px;
+      color: black;
+      
+  }
+  .col p {
+      font-size: 18px;
+      color: black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

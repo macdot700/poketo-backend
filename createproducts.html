@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create products</title>
+    <link rel="stylesheet" href="css/createproducts.css">
+</head>
+<body>
+    <div class="header">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()"> &#9776; </span>
+
+        <h1><b><i>Poketo Admin Page</i></b></h1>
+    </div>
+    <hr style="border: 1px solid gray;">
+
+    <div id="mySidenav" class="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i>x</i></a>
+        <a href="allusers.html">All Users</a>
+        <a href="createusers.html">Create Users</a>
+        <a href="allproducts.html">All Products</a>
+        <a href="createproducts.html">Create Products</a>
+        <a href="allorders.html">All Orders</a>
+    </div>
+
+    <h3 style="font-weight: lighter;">Create new product</h3><br><br><br><br>
+
+    <div class="crtpdts">
+        <div class="newprdts">
+            <form method="post" action="http://159.65.21.42:9000/create/product" enctype="multipart/form-data">
+                <label for="name">Product name</label><br />
+              <input
+                type="text"
+                placeholder="Product Name"
+                name="name"
+                class="name"
+              />
+              <br>
+              <label for="description">Product description</label>
+              <input
+                type="text"
+                placeholder="Product description"
+                name="description"
+                class="description"
+              />
+              <br>
+              <label for="price">Price</label>
+              <input
+                type="number"
+                placeholder="Product price"
+                name="price"
+                class="price"
+              />
+              <br>
+              <label for="quantity">Quantity</label>
+              <input
+                type="number"
+                placeholder="Input Quantity"
+                name="quantity"
+                class="quantity"
+              />
+              <br>
+              <label for="quantity"> Product Image </label><br />
+              <input type="file" id="myFile" name="image">
+              <br />
+              <label for="category">Category</label>
+              <select
+                name="category"
+                id="category">
+                <option value="">Select Category</option>
+                <option value="jaySlider">Section 1</option>
+                <option value="jaySection">Section 2</option>
+                <option value="jayShop">Section 3</option>
+              </select>
+              <br>
+              <button id="prodctBtn" class="prodctBtn">ADD</button><br><br>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="js/nav.js"></script>
+    
+    
+</body>
+</html>
