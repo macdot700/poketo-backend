@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All users page</title>
+    <link rel="stylesheet" href="css/allusers.css">
+</head>
+
+<body>
+    <div class="header">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()"> &#9776; </span>
+
+        <h1><b><i>Poketo Admin Page</i></b></h1>
+    </div>
+    <hr style="border: 1px solid gray;">
+
+    <div id="mySidenav" class="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i>x</i></a>
+        <a href="allusers.html">All Users</a>
+        <a href="createusers.html">Create Users</a>
+        <a href="allproducts.html">All Products</a>
+        <a href="createproducts.html">Create Products</a>
+        <a href="allorders.html">All Orders</a>
+    </div>
+
+    <h3 style="font-weight: lighter;">All users page</h3>
+
+
+    <div class="allusers">
+    
+        <div class="updateUserForm" id="updateUserForm">
+            <form>
+                <div class="columnms">
+            <div class="col">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                
+            </div>
+            <div class="col">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                
+            </div>
+            <div class="col">
+                <label for="phone">Phone</label>
+                <input type="phone" name="phone" id="phone">
+                
+            </div>
+            <div class="col">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                
+            </div>
+        </div>
+
+        <button type="button" id="regUserBtn" class="regUserBtn">ADD</button><br><br>
+    </form>
+    </div>
+
+    <div class="allusers_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="userDataView">
+                <tr>
+                  <th>1</th>
+                  <th>John</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th><a href="">Edit</a> <a href="">Delete</a></th>
+                </tr>
+            </tbody>
+        </table>
+</div><br><br>
+</div>
+
+<button id="reHome" class="reHome"><a href="index.html" style="text-decoration: none;">return to homepage</a></button>
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/nav.js"></script>
+    
+    
+</body>
+
+</html>

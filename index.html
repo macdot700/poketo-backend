@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay's store</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()"> &#9776; </span>
+        
+        <h1><b><i>Poketo Admin Page</i></b></h1>
+    </div>
+    <hr style="border: 1px solid gray;">
+
+
+    <div id="mySidenav" class="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i>x</i></a>
+        <a href="allusers.html">All Users</a>
+        <a href="createusers.html">Create Users</a>
+        <a href="allproducts.html">All Products</a>
+        <a href="createproducts.html">Create Products</a>
+        <a href="allorders.html">All Orders</a>
+      </div>
+      
+      <h3 style="font-weight: lighter;">Welcome to my dashboard</h3>
+
+    <div class="myDash" id="myDash">
+        <div class="col">
+            <h1>Total Products</h1>
+            <p>1500</p>
+        </div>
+        <div class="col">
+            <h1>Total Users</h1>
+            <p>9589</p>
+        </div>
+        <div class="col">
+            <h1>Total Price</h1>
+            <p>$10,500</p>
+        </div>
+        <div class="col">
+            <h1>Total Orders</h1>
+            <p>29,321</p>
+        </div>
+    </div>
+    <button id="reHome" class="reHome"><a href="index.html" style="text-decoration: none;">return to homepage</a></button>
+
+      
+      
+
+    
+    <script src="js/nav.js"></script>
+    
+</body>
+</html>

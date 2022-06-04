@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create users</title>
+    <link rel="stylesheet" href="css/createusers.css">
+</head>
+<body>
+    <div class="header">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()"> &#9776; </span>
+        
+        <h1><b><i>Poketo Admin Page</i></b></h1>
+    </div>
+    <hr style="border: 1px solid gray;">
+
+    <div id="mySidenav" class="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i>x</i></a>
+        <a href="allusers.html">All Users</a>
+        <a href="createusers.html">Create Users</a>
+        <a href="allproducts.html">All Products</a>
+        <a href="createproducts.html">Create Products</a>
+        <a href="allorders.html">All Orders</a>
+      </div>
+
+    <h3 style="font-weight: lighter;">Fill the form to create a new user</h3>
+
+    <div class="createusers">
+        <form>
+        <div class="col">
+            <input type="text" name="name" id="name" placeholder="Username">
+        </div>
+        
+
+        <div class="col">
+            <input type="text" name="email" id="email" placeholder="email">
+            
+        </div>
+        <div class="col">
+            <input type="number" name="phone" id="phone" placeholder="phone number">
+            
+        </div>
+    
+        <div class="col">
+            <input type="password" name="password" 
+            class="password"
+            id="password"placeholder="input password">
+            
+            <button type="button" id="regUserBtn" class="regUserBtn">SUBMIT</button><br><br>
+        </form>
+        
+    </div>
+
+    
+
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/nav.js"></script>
+    
+</body>
+</html>
